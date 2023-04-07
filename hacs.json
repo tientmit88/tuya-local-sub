@@ -1,0 +1,5 @@
+{
+  "name": "Tuya Local Sub",
+  "render_readme": true,
+  "homeassistant": "2022.11.0"
+}
