@@ -1,0 +1,13 @@
+{
+    "domain": "tuya_local_sub",
+    "iot_class": "local_push",
+    "integration_type": "device",
+    "name": "Tuya Local Sub",
+    "version": "2022.1.2",
+    "documentation": "https://github.com/make-all/tuya-local",
+    "issue_tracker": "https://github.com/make-all/tuya-local/issues",
+    "dependencies": [],
+    "codeowners": ["@make-all"],
+    "requirements": ["pycryptodome~=3.16.0","tinytuya==1.9.1"],
+    "config_flow": true
+}
