@@ -10,8 +10,8 @@ from unittest import TestCase
 
 from homeassistant.util.json import load_json
 
-import custom_components.tuya_local as root
-from custom_components.tuya_local.helpers.device_config import (
+import custom_components.tuya_gateway as root
+from custom_components.tuya_gateway.helpers.device_config import (
     available_configs,
     TuyaDeviceConfig,
 )

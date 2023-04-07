@@ -4,23 +4,23 @@ from uuid import uuid4
 
 from homeassistant.helpers.entity import EntityCategory
 
-from custom_components.tuya_local.generic.binary_sensor import TuyaLocalBinarySensor
-from custom_components.tuya_local.generic.button import TuyaLocalButton
-from custom_components.tuya_local.generic.climate import TuyaLocalClimate
-from custom_components.tuya_local.generic.cover import TuyaLocalCover
-from custom_components.tuya_local.generic.fan import TuyaLocalFan
-from custom_components.tuya_local.generic.humidifier import TuyaLocalHumidifier
-from custom_components.tuya_local.generic.light import TuyaLocalLight
-from custom_components.tuya_local.generic.lock import TuyaLocalLock
-from custom_components.tuya_local.generic.number import TuyaLocalNumber
-from custom_components.tuya_local.generic.select import TuyaLocalSelect
-from custom_components.tuya_local.generic.sensor import TuyaLocalSensor
-from custom_components.tuya_local.generic.siren import TuyaLocalSiren
-from custom_components.tuya_local.generic.switch import TuyaLocalSwitch
-from custom_components.tuya_local.generic.vacuum import TuyaLocalVacuum
-from custom_components.tuya_local.generic.water_heater import TuyaLocalWaterHeater
+from custom_components.tuya_gateway.generic.binary_sensor import TuyaLocalBinarySensor
+from custom_components.tuya_gateway.generic.button import TuyaLocalButton
+from custom_components.tuya_gateway.generic.climate import TuyaLocalClimate
+from custom_components.tuya_gateway.generic.cover import TuyaLocalCover
+from custom_components.tuya_gateway.generic.fan import TuyaLocalFan
+from custom_components.tuya_gateway.generic.humidifier import TuyaLocalHumidifier
+from custom_components.tuya_gateway.generic.light import TuyaLocalLight
+from custom_components.tuya_gateway.generic.lock import TuyaLocalLock
+from custom_components.tuya_gateway.generic.number import TuyaLocalNumber
+from custom_components.tuya_gateway.generic.select import TuyaLocalSelect
+from custom_components.tuya_gateway.generic.sensor import TuyaLocalSensor
+from custom_components.tuya_gateway.generic.siren import TuyaLocalSiren
+from custom_components.tuya_gateway.generic.switch import TuyaLocalSwitch
+from custom_components.tuya_gateway.generic.vacuum import TuyaLocalVacuum
+from custom_components.tuya_gateway.generic.water_heater import TuyaLocalWaterHeater
 
-from custom_components.tuya_local.helpers.device_config import (
+from custom_components.tuya_gateway.helpers.device_config import (
     TuyaDeviceConfig,
     possible_matches,
 )
@@ -49,7 +49,7 @@ class TuyaDeviceTestCase(IsolatedAsyncioTestCase):
 
     def setUpForConfig(self, config_file, payload):
         """Perform setup tasks for every test."""
-        device_patcher = patch("custom_components.tuya_local.device.TuyaLocalDevice")
+        device_patcher = patch("custom_components.tuya_gateway.device.TuyaLocalDevice")
         self.addCleanup(device_patcher.stop)
         self.mock_device = device_patcher.start()
         self.dps = payload.copy()

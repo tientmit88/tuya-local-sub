@@ -1,9 +1,9 @@
 {
-    "title": "Tuya Local Sub",
+    "title": "Tuya Gateway",
     "config": {
         "step": {
             "user": {
-                "title": "Configure your Tuya Local device",
+                "title": "Configure your Tuya Gateway device",
                 "description": "[Follow these instructions to find your device id and local key.](https://github.com/make-all/tuya-local#finding-your-device-id-and-local-key)",
                 "data": {
                     "host": "IP address or hostname",
@@ -39,7 +39,7 @@
     "options": {
         "step": {
             "user": {
-                "title": "Configure your Tuya Local device",
+                "title": "Configure your Tuya Gateway device",
                 "description": "[Follow these instructions to find your local key.](https://github.com/make-all/tuya-local#finding-your-device-id-and-local-key)",
                 "data": {
                     "host": "IP address or hostname",

@@ -2,8 +2,8 @@
 from unittest import IsolatedAsyncioTestCase
 from unittest.mock import MagicMock
 
-from custom_components.tuya_local.helpers.config import get_device_id
-from custom_components.tuya_local.helpers.device_config import (
+from custom_components.tuya_gateway.helpers.config import get_device_id
+from custom_components.tuya_gateway.helpers.device_config import (
     available_configs,
     get_config,
     _bytes_to_fmt,

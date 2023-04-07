@@ -3,14 +3,14 @@ from pytest_homeassistant_custom_component.common import MockConfigEntry
 import pytest
 from unittest.mock import AsyncMock, Mock
 
-from custom_components.tuya_local.const import (
+from custom_components.tuya_gateway.const import (
     CONF_DEVICE_ID,
     CONF_PROTOCOL_VERSION,
     CONF_TYPE,
     DOMAIN,
 )
-from custom_components.tuya_local.generic.sensor import TuyaLocalSensor
-from custom_components.tuya_local.sensor import async_setup_entry
+from custom_components.tuya_gateway.generic.sensor import TuyaLocalSensor
+from custom_components.tuya_gateway.sensor import async_setup_entry
 
 
 @pytest.mark.asyncio
